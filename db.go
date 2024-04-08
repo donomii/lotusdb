@@ -430,7 +430,7 @@ func (db *DB) flushMemtable(table *memtable) {
 
 func (db *DB) listenMemtableFlush() {
 	for {
-		table, ok := <-db.flushChan:
+		table, ok := <-db.flushChan
 		if ok {
 			db.flushMemtable(table)
 		} else {
