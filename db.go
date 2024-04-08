@@ -6,7 +6,6 @@ import (
 	"io"
 	"log"
 	"os"
-	"os/signal"
 	"path/filepath"
 	"reflect"
 	"sync"
