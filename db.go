@@ -441,6 +441,7 @@ func (db *DB) listenMemtableFlush() {
 				return
 			}
 		case <-sig:
+			fmt.Println("Received signal, quitting")
 			db.Sync()
 			db.Close()
 			os.Exit(0)
