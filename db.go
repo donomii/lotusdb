@@ -9,7 +9,6 @@ import (
 	"path/filepath"
 	"reflect"
 	"sync"
-	"syscall"
 	"time"
 
 	"github.com/dgraph-io/badger/v4/y"
