@@ -443,7 +443,7 @@ func (db *DB) listenMemtableFlush() {
 		case <-sig:
 			db.Sync()
 			db.Close()
-			os.Exit()
+			os.Exit(0)
 			return
 		}
 	}
