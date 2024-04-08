@@ -1,4 +1,4 @@
-module github.com/lotusdblabs/lotusdb/v2
+module github.com/donomii/lotusdb
 
 go 1.19
 
