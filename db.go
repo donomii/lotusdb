@@ -441,6 +441,9 @@ func (db *DB) listenMemtableFlush() {
 				return
 			}
 		case <-sig:
+			db.Sync()
+			db.Close()
+			os.Exit()
 			return
 		}
 	}
