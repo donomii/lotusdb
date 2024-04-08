@@ -429,21 +429,12 @@ func (db *DB) flushMemtable(table *memtable) {
 }
 
 func (db *DB) listenMemtableFlush() {
-	sig := make(chan os.Signal, 1)
-	signal.Notify(sig, os.Interrupt, syscall.SIGHUP, syscall.SIGINT, syscall.SIGTERM, syscall.SIGQUIT)
 	for {
-		select {
-		case table, ok := <-db.flushChan:
-			if ok {
-				db.flushMemtable(table)
-			} else {
-				db.closeChan <- struct{}{}
-				return
-			}
-		case <-sig:
-			fmt.Println("Received signal, quitting")
-			db.Close()
-			os.Exit(0)
+		table, ok := <-db.flushChan:
+		if ok {
+			db.flushMemtable(table)
+		} else {
+			db.closeChan <- struct{}{}
 			return
 		}
 	}
