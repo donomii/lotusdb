@@ -141,7 +141,8 @@ func (db *DB) Close() error {
 	db.mu.Lock()
 	defer db.mu.Unlock()
 	close(db.flushChan)
-	<-db.closeChan
+	db.flushLock.Lock()
+	db.flushLock.Unlock()
 	// close all memtables
 	for _, table := range db.immuMems {
 		if err := table.close(); err != nil {
