@@ -12,14 +12,14 @@ Key features:
 
 ## Design Overview
 
-![](https://github.com/lotusdblabs/lotusdb/blob/main/resource/img/design-overview.png)
+![](https://github.com/donomii/lotusdb/blob/main/resource/img/design-overview.png)
 
 ## Getting Started
 ```go
 package main
 
 import (
-	"github.com/lotusdblabs/lotusdb/v2"
+	"github.com/donomii/lotusdb/v2"
 )
 
 func main() {
@@ -56,11 +56,11 @@ func main() {
 	}
 }
 ```
-see the [examples](https://github.com/lotusdblabs/lotusdb/tree/main/examples) for more details.
+see the [examples](https://github.com/donomii/lotusdb/tree/main/examples) for more details.
 
 ## Community
 
-Welcome to join the [Slack channel](https://join.slack.com/t/rosedblabs/shared_invite/zt-19oj8ecqb-V02ycMV0BH1~Tn6tfeTz6A) and  [Discussions](https://github.com/lotusdblabs/lotusdb/discussions) to connect with LotusDB team members and other users.
+Welcome to join the [Slack channel](https://join.slack.com/t/rosedblabs/shared_invite/zt-19oj8ecqb-V02ycMV0BH1~Tn6tfeTz6A) and  [Discussions](https://github.com/donomii/lotusdb/discussions) to connect with LotusDB team members and other users.
 
 If you are a Chinese user, you are also welcome to join our WeChat group, scan the QR code and you will be invited:
 

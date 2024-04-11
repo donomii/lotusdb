@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/lotusdblabs/lotusdb/v2/util"
+	"github.com/donomii/lotusdb/v2/util"
 	"github.com/rosedblabs/diskhash"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

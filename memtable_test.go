@@ -5,7 +5,7 @@ import (
 	"testing"
 
 	"github.com/bwmarrin/snowflake"
-	"github.com/lotusdblabs/lotusdb/v2/util"
+	"github.com/donomii/lotusdb/v2/util"
 	"github.com/stretchr/testify/assert"
 )
 

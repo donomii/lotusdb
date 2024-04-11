@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/lotusdblabs/lotusdb/v2"
+	"github.com/donomii/lotusdb/v2"
 )
 
 // this file shows how to use the batch operations of LotusDB

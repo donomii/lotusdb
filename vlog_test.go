@@ -4,7 +4,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/lotusdblabs/lotusdb/v2/util"
+	"github.com/donomii/lotusdb/v2/util"
 	"github.com/rosedblabs/wal"
 	"github.com/stretchr/testify/assert"
 )
